@@ -1,0 +1,25 @@
+
+/*--image covers entire page--*/
+html,
+body,
+.view {
+    height: 100%;
+}
+.view {
+    background: url("images/ales-krivec-1336.jpg");
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+/*--image credit--*/
+#image-credit{
+	color:white;
+	text-decoration:none;
+	padding:2px 4px;
+	display:inline-block;
+	border-radius:3px;
+	position:absolute;
+	top:96%;
+	font-size:.8rem;
+}
