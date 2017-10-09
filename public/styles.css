@@ -12,7 +12,8 @@ button{
 	font-size: .8rem;
 }
 button:hover{
-	background-color:red;
+	background-color:rgba(76,175,80, .8);
+	transition: all ease-in-out 400ms;
 }
 .vertical-align{
 	position:relative;
@@ -27,15 +28,37 @@ button:hover{
 	border-radius:20px;
 	box-shadow:0px 0px 35px black;
 }
-.text-style--author{
+.font-style--author{
 	font-size:.8rem;
 	font-style:italic;
 	height:auto;
 }
+.font-style--bold{
+	font-weight:500;
+}
+.font-size--degrees{
+	font-size:2rem;
+}
 .position{
-	position:relative;
-	top:74%;
 	text-align:center;
+}
+.flex{
+	display:flex;
+	justify-content:center;
+}
+.spacing{
+	margin: 1.25rem 1rem;
+}
+.width{
+	width:100px;
+}
+#weather-icon{
+	height:40px;
+	width:50px;
+}
+#weather-degrees{
+	height:50px;
+	width:60px;
 }
 /*--image covers entire page--*/
 html,
