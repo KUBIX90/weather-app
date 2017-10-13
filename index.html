@@ -22,23 +22,30 @@
 			<button>Tokyo</button>
 			<button>Los Angeles</button>
 				<div class="text-center app-container mx-auto font-style--bold"><!--app container class causing mobile issues-->
-					<div class="flex">
-						<img id="weather-icon" class="spacing"></img>
-						<p id="weather-degrees" class="font-size--degrees spacing"></p>
+					<div class="flex margin-top--xl">
+						<img id="weather-icon" class="margin-right--m"></img>
+						<p id="weather-degrees" class="font-size--degrees"></p>
 					</div>
 					<div class="flex">
-						<p id="weather-description" class="spacing width">Scattered Clouds</p>
-						<p id="weather-humidity" class="spacing width">56%</p>
-						<p id="weather-wind" class="spacing width">34mph</p>
+						<div class="flex--column margin-right--xl">
+							<p class="font-style--title">Weather</p>
+							<p id="weather-description">Sca</p>
+						</div>
+						<div class="flex--column margin-right--xl">
+							<p class="font-style--title">Humidity</p>
+							<p id="weather-humidity"></p>
+						</div>
+						<div class="flex-column">
+							<p class="font-style--title">Wind Speed</p>
+							<p id="weather-wind"></p>
+						</div>
 					</div>
-					
-						<p id="location" class=" clear text-center spacing">Cheshunt, Hertfordshire</p>
-					
-					<div class="position clear">
-						<a href="https://github.com/KUBIX90"><i class="ion-social-github"></i></a>
+						<p id="weather-location" class="text-center"></p>
+					<div class="flex">
+						<a href="https://github.com/KUBIX90"><i class="ion-social-github margin-right--xs"></i></a>
 						<a href="https://www.linkedin.com/in/mark-kubik-79926440"><i class="ion-social-linkedin"></i></a>
-							<p class="font-style--author">By Mark Kubik</p>
-					</div>	
+					</div>
+						<p class="font-style--author">By Mark Kubik</p>
 				</div>
 			<button>Dubai</button>
 			<button>New York</button>

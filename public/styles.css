@@ -22,8 +22,6 @@ button:hover{
 	width:50%;
 }
 .app-container {
-	height:350px;
-	width:450px;
 	background-color:rgba(255, 255, 255, .60);
 	border-radius:20px;
 	box-shadow:0px 0px 35px black;
@@ -31,34 +29,43 @@ button:hover{
 .font-style--author{
 	font-size:.8rem;
 	font-style:italic;
-	height:auto;
+	padding-bottom:1.5rem;
+	margin-bottom: .1rem;
 }
 .font-style--bold{
 	font-weight:500;
 }
+.margin-top--xl{
+	padding-top:2rem;
+}
+.margin-right--xl{
+	margin-right:3rem;
+}
+.margin-right--xs{
+	margin-right:.25rem;
+}
+.margin-right--m{
+	margin-right:1rem;
+}
+.font-style--title{
+	font-weight:300;
+}
 .font-size--degrees{
 	font-size:2rem;
-}
-.position{
-	text-align:center;
 }
 .flex{
 	display:flex;
 	justify-content:center;
 }
+.flex-column{
+	flex-direction:column;
+}
 .spacing{
 	margin: 1.25rem 1rem;
-}
-.width{
-	width:100px;
 }
 #weather-icon{
 	height:40px;
 	width:50px;
-}
-#weather-degrees{
-	height:50px;
-	width:60px;
 }
 /*--image covers entire page--*/
 html,
