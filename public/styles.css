@@ -67,6 +67,9 @@ button:hover{
 	height:40px;
 	width:50px;
 }
+#weather-description{
+	text-transform:capitalize;
+}
 /*--image covers entire page--*/
 html,
 body,
