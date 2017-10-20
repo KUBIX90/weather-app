@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 		//Get Geo location//
 	if (navigator.geolocation){
 		navigator.geolocation.getCurrentPosition(function(position){
@@ -10,6 +11,7 @@ $(document).ready(function(){
 		$.getJSON(weatherAPI, function(data){
 		
 			var icon = data.weather[0].icon;
+			var temp = Math.round(data.main.temp);
 			
 			//local weather information
 			$("#weather-icon").attr("src", icon);
@@ -18,8 +20,19 @@ $(document).ready(function(){
 			$("#weather-humidity").html(Math.round(data.main.humidity) + "%");
 			$("#weather-wind").html(Math.round(data.wind.speed) + "mph");
 			$("#weather-location").html(data.name);
+			
+				//toggle Celsuis & Fahrenheit
+				$(".slider").on("click", function(){
+		
+					$("#weather-degrees").html(Math.round(temp*9/5 + 32) + "&deg;f");
+				});
+			
+			
 			});
 		});
+		
 	};
+	
+
 });
 
