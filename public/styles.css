@@ -63,6 +63,10 @@ button:hover{
 .spacing{
 	margin: 1.25rem 1rem;
 }
+.switch-temp--position{
+	position:relative;
+	left:3.5rem;
+}
 #weather-icon{
 	height:40px;
 	width:50px;
