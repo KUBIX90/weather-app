@@ -31,29 +31,29 @@ $(document).ready(function() {
       "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lon;
 
     $.getJSON(weatherAPI, function(data) {
-      $(".slider").on("click", function() {
+      $(".temp-slider").on("click", function() {
         var tempC = data.main.temp;
         var tempF = tempC * 9 / 5 + 32;
 
         if (toggleF) {
           $("#weather-degrees").html(Math.round(tempF) + "&deg;F");
-          $("#switch-temp--text").html("Fahrenheit");
+          $("#temp-slider-text").html("Fahrenheit");
           toggleF = false;
         } else if (toggleF == false) {
           $("#weather-degrees").html(Math.round(tempC) + "&deg;C");
-          $("#switch-temp--text").html("Celsius");
+          $("#temp-slider-text").html("Celsius");
           toggleF = true;
         }
       });
     });
   }
 
-  ///////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
 
   //Get Geo location//
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
-      //parsing the JSON API//
+      //Show my local weather
       var lon = position.coords.longitude;
       var lat = position.coords.latitude;
 

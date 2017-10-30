@@ -1,0 +1,24 @@
+/*--image covers entire page--*/
+html,
+body,
+.view {
+    height: 100%;
+}
+.view {
+    background: url("../images/default.jpg");
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+/*--image credit--*/
+.background-text--image-credit{
+	color:white;
+	text-decoration:none;
+	padding:2px 4px;
+	display:inline-block;
+	border-radius:3px;
+	position:absolute;
+	top:96%;
+	font-size:.8rem;
+}

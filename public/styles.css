@@ -1,6 +1,7 @@
-i {
-	font-size:2.5rem;
-}
+@import url("CSS_modules/_background.css");
+@import url("CSS_modules/_temp-slider.css");
+@import url("CSS_modules/_container.css");
+
 button{
 	position:relative;
 	margin:.5rem .25rem;
@@ -15,139 +16,10 @@ button:hover{
 	background-color:rgba(76,175,80, .8);
 	transition: all ease-in-out 400ms;
 }
-.vertical-align{
-	position:relative;
-	top:45%;
-	transform:translateY(-50%);
-	width:50%;
-}
-.app-container {
-	background-color:rgba(255, 255, 255, .80);
-	border-radius:20px;
-	box-shadow:0px 0px 35px black;
-}
-.font-style--author{
-	font-size:.8rem;
-	font-style:italic;
-	padding-bottom:1.5rem;
-	margin-bottom: .1rem;
-}
-.font-style--bold{
-	font-weight:500;
-}
-.margin-top--xl{
-	padding-top:2rem;
-}
-.margin-right--xl{
-	margin-right:3rem;
-}
-.margin-right--xs{
-	margin-right:.25rem;
-}
-.margin-right--m{
-	margin-right:1rem;
-}
-.font-style--title{
-	font-weight:300;
-}
-.font-size--degrees{
-	font-size:2rem;
-}
 .flex{
 	display:flex;
 	justify-content:center;
 }
 .flex-column{
 	flex-direction:column;
-}
-.spacing{
-	margin: 1.25rem 1rem;
-}
-.switch-temp--position{
-	position:relative;
-	left:3.5rem;
-}
-#weather-icon{
-	height:40px;
-	width:50px;
-}
-#weather-description{
-	text-transform:capitalize;
-}
-
-/*--switch CSS--*/
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 20px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {display:none;}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #919191;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius:34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 4px;
-  bottom: 4px;
-  border-radius:34px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #323232;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(30px);
-  -ms-transform: translateX(30px);
-  transform: translateX(30px);
-}
-
-/*--image covers entire page--*/
-html,
-body,
-.view {
-    height: 100%;
-}
-.view {
-    background: url("images/default.jpg");
-	-webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-}
-/*--image credit--*/
-#image-credit{
-	color:white;
-	text-decoration:none;
-	padding:2px 4px;
-	display:inline-block;
-	border-radius:3px;
-	position:absolute;
-	top:96%;
-	font-size:.8rem;
 }
