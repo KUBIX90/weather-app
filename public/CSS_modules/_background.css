@@ -6,9 +6,6 @@ body,
 }
 .view {
     background: url("../images/default.jpg");
-	-webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
     background-size:cover;
 }
 /*--image credit--*/
@@ -21,4 +18,34 @@ body,
 	position:absolute;
 	top:96%;
 	font-size:.8rem;
+}
+.background-paris{
+	background: url("../images/paris.jpg");
+    background-size:cover;
+	transition: all 3s ease;
+}
+.background-tokyo{
+	background: url("../images/tokyo.jpg");
+    background-size:cover;
+	transition: all 3s ease;
+}
+.background-los_angeles{
+	background: url("../images/los_angeles.jpg");
+    background-size:cover;
+	transition: all 3s ease;
+}
+.background-dubai{
+	background: url("../images/dubai.jpg");
+    background-size:cover;
+	transition: all 3s ease;
+}
+.background-new_york{
+	background: url("../images/new_york.jpg");
+    background-size:cover;
+	transition: all 3s ease;
+}
+.background-london{
+	background: url("../images/london.jpg");
+    background-size:cover;
+	transition: all 3s ease;
 }

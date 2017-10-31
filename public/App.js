@@ -3,7 +3,10 @@ $(document).ready(function() {
 
   function weatherInfo(lat, lon) {
     var weatherAPI =
-      "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lon;
+      "https://fcc-weather-api.glitch.me/api/current?lat=" +
+      lat +
+      "&lon=" +
+      lon;
 
     $.getJSON(weatherAPI, function(data) {
       //local weather information
@@ -18,9 +21,12 @@ $(document).ready(function() {
 
   function changeBackground(city, name, URL) {
     $(".view").css({
-      background: "url(public/images/" + city + ".jpg)",
       "background-size": "cover"
     });
+    $(".view")
+      .removeClass()
+      .addClass("view")
+      .addClass("background-" + city);
     $("#image-credit")
       .html("Background by " + name)
       .attr("href", URL);
@@ -28,7 +34,10 @@ $(document).ready(function() {
 
   function toggleTemp(lat, lon) {
     var weatherAPI =
-      "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lon;
+      "https://fcc-weather-api.glitch.me/api/current?lat=" +
+      lat +
+      "&lon=" +
+      lon;
 
     $.getJSON(weatherAPI, function(data) {
       $(".temp-slider").on("click", function() {
@@ -48,7 +57,7 @@ $(document).ready(function() {
     });
   }
 
-/////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////
 
   //Get Geo location//
   if (navigator.geolocation) {
