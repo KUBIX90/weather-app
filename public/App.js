@@ -1,5 +1,7 @@
 $(document).ready(function() {
+  
   var toggleF = true;
+  var weatherData;
 
   function weatherInfo(lat, lon) {
     var weatherAPI =
@@ -9,7 +11,9 @@ $(document).ready(function() {
       lon;
 
     $.getJSON(weatherAPI, function(data) {
+		
       //local weather information
+	  weatherData=data;
       $("#weather-icon").attr("src", data.weather[0].icon);
       $("#weather-degrees").html(Math.round(data.main.temp) + "&deg;c");
       $("#weather-description").html(data.weather[0].description);
@@ -32,16 +36,9 @@ $(document).ready(function() {
       .attr("href", URL);
   }
 
-  function toggleTemp(lat, lon) {
-    var weatherAPI =
-      "https://fcc-weather-api.glitch.me/api/current?lat=" +
-      lat +
-      "&lon=" +
-      lon;
-
-    $.getJSON(weatherAPI, function(data) {
-      $(".temp-slider").on("click", function() {
-        var tempC = data.main.temp;
+  function toggleTemp() {
+        
+		var tempC = weatherData.main.temp;
         var tempF = tempC * 9 / 5 + 32;
 
         if (toggleF) {
@@ -53,9 +50,9 @@ $(document).ready(function() {
           $("#temp-slider-text").html("Celsius");
           toggleF = true;
         }
-      });
-    });
   }
+  
+  $(".temp-slider").on("click", toggleTemp);
 
   /////////////////////////////////////////////////////////////
 
@@ -67,7 +64,6 @@ $(document).ready(function() {
       var lat = position.coords.latitude;
 
       weatherInfo(lat, lon);
-      toggleTemp(lat, lon);
     });
   }
 
@@ -103,17 +99,14 @@ $(document).ready(function() {
 
   //Dubai weather on click
   $("#weather-dubai").on("click", function() {
-    var toggleF = true;
-
-    changeBackground(
+	changeBackground(
       "dubai",
       "Roman Logov",
       "https://unsplash.com/photos/jomuw0-3F8A"
     );
     weatherInfo(25.2, 55.27);
-    toggleTemp(25.2, 55.27);
   });
-
+  
   //New York weather on click
   $("#weather-new-york").on("click", function() {
     changeBackground(
