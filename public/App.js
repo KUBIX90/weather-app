@@ -52,6 +52,7 @@ $(document).ready(function() {
         }
   }
   
+  //toggle Celsius/Fahrenheit
   $(".temp-slider").on("click", toggleTemp);
 
   /////////////////////////////////////////////////////////////

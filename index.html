@@ -4,63 +4,50 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="ionicons/css/ionicons.min.css"/>
-	<link href="public/styles.css" rel="stylesheet" type="text/css"/>
+	<link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="public/styles.css" rel="stylesheet" type="text/css">
 	<title>Weather App</title>
 </head>
 <body>
 	<div class="view">
 		<div class="full-bg-img">
 		</div>
-		<div class="container container--position-vertical text-center">
-			<button id="weather-paris">Paris</button>
-			<button id="weather-tokyo">Tokyo</button>
-			<button id="weather-LA">Los Angeles</button>
-				<div class="text-center mx-auto container--background-color container--background-shape container--font-style-bold"><!--app container class causing mobile issues-->
-					<div class="flex container--text-margin-top-xl">
-						<img id="weather-icon" alt="weather icon" class="container--weather-icon-size container--weather-icon-margin-right-m"/>
-						<p id="weather-degrees" class="container--degrees-font-size"></p>
-						<div class="flex-column temp-slider--position-left">
-							<p id="temp-slider-text">Celsius</p>
-							<label class="switch">
-							  <input type="checkbox">
-							  <span class="temp-slider"></span>
-							</label>
-						</div>
+		<div class="container--center container--position-vertical container--text-center">
+			<button id="weather-paris">Paris</button> <button id="weather-tokyo">Tokyo</button> <button id="weather-LA">Los Angeles</button>
+			<div class="container--text-center container--background-color container--background-shape">
+				<div class="flex container--text-margin-top-xl">
+					<img alt="weather icon" class="container--weather-icon-size container--weather-icon-margin-right-m" id="weather-icon">
+					<p class="container--degrees-font-size container--font-style-bold" id="weather-degrees"></p>
+					<div class="flex-column temp-slider--position-left">
+						<p id="temp-slider-text">Celsius</p><label class="switch"><input type="checkbox"> <span class="temp-slider"></span></label>
 					</div>
-					<div class="flex">
-						<div class="flex--column container--text-margin-right-xl">
-							<p class="container--title-font-weight">Weather</p>
-							<p id="weather-description"></p>
-						</div>
-						<div class="flex--column container--text-margin-right-xl">
-							<p class="container--title-font-weight">Humidity</p>
-							<p id="weather-humidity"></p>
-						</div>
-						<div class="flex-column">
-							<p class="container--title-font-weight">Wind Speed</p>
-							<p id="weather-wind"></p>
-						</div>
-					</div>
-						<p id="weather-location" class="text-center"></p>
-					<div class="flex">
-						<a href="https://github.com/KUBIX90"><i class="ion-social-github container--icon-font-size container--icon-size container--icon-margin_right_xs"></i></a>
-						<a href="https://www.linkedin.com/in/mark-kubik-79926440"><i class="ion-social-linkedin container--icon-size container--icon-font-size"></i></a>
-					</div>
-						<p class="container--author-font-style">By Mark Kubik</p>
 				</div>
-			<button id="weather-dubai">Dubai</button>
-			<button id="weather-new-york">New York</button>
-			<button id="weather-london">London</button>
+				<div class="flex">
+					<div class="flex--column container--text-margin-right-xl">
+						<p>Weather</p>
+						<p class="container--font-style-bold" id="weather-description"></p>
+					</div>
+					<div class="flex--column container--text-margin-right-xl">
+						<p>Humidity</p>
+						<p class="container--font-style-bold" id="weather-humidity"></p>
+					</div>
+					<div class="flex-column">
+						<p>Wind Speed</p>
+						<p class="container--font-style-bold" id="weather-wind"></p>
+					</div>
+				</div>
+				<p class="text-center container--font-style-bold" id="weather-location"></p>
+				<div class="flex">
+					<a href="https://github.com/KUBIX90"><i class="ion-social-github container--icon-font-size container--icon-size container--icon-margin_right_xs"></i></a> <a href="https://www.linkedin.com/in/mark-kubik-79926440"><i class="ion-social-linkedin container--icon-size container--icon-font-size"></i></a>
+				</div>
+				<p class="container--author-font-style">By Mark Kubik</p>
+			</div>
+			<button id="weather-dubai">Dubai</button> <button id="weather-new-york">New York</button> <button id="weather-london">London</button>
 		</div>
-	</div>
-	<a class="background-text--image-credit" 
-		href="https://unsplash.com/@aleskrivec" 
-		target="_blank">Background by Ales Krivac
-	</a>
+	</div><a id="image-credit" class="background-text--image-credit" href="https://unsplash.com/@aleskrivec" target="_blank">Background by Ales Krivac</a> 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script>
+	</script> 
 	<script src="public/App.js">
 	</script>
 </body>
