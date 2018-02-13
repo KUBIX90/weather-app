@@ -9,20 +9,36 @@
 	<title>Weather App</title>
 </head>
 <body>
-	<div class="view">
-		<div class="full-bg-img">
-		</div>
-		<div class="container--center container--position-vertical container--text-center">
-			<button id="weather-paris">Paris</button> <button id="weather-tokyo">Tokyo</button> <button id="weather-LA">Los Angeles</button>
-			<div class="container--text-center container--background-color container--background-shape">
-				<div class="flex container--text-margin-top-xl">
-					<img alt="weather icon" class="container--weather-icon-size container--weather-icon-margin-right-m" id="weather-icon">
-					<p class="container--degrees-font-size container--font-style-bold" id="weather-degrees"></p>
-					<div class="flex-column temp-slider--position-left">
-						<p id="temp-slider-text">Celsius</p><label class="switch"><input type="checkbox"> <span class="temp-slider"></span></label>
-					</div>
-				</div>
-				<div class="flex">
+
+	<section id = "container" 
+			 class = "section_container--position-vertical
+					  section_container--position-center">
+
+			<button id ="weather-paris">Paris</button>
+			<button id="weather-tokyo">Tokyo</button>
+			<button id="weather-LA">Los Angeles</button>
+			
+				<article id = "temp-info" 
+						 class = "flex 
+								  flex--center 
+								  container_temp--padding-top">
+					<img id = "weather-icon" 
+						 alt = "weather icon" 
+						 class = "container_temp-weather-icon--size
+								 container--weather-icon-margin-right-m"/>
+						<p id = "weather-degrees"
+						   class = "container--degrees-font-size 
+									container--font-style-bold"></p>
+					<article class = "flex-column temp-slider--position-left">
+						<p id = "temp-slider-text">Celsius</p>
+							<label class="switch">
+								<input type="checkbox">
+									<span class="temp-slider"></span>
+							</label>
+					</article>
+				</article>
+				
+				<div class="flex flex--center">
 					<div class="flex--column container--text-margin-right-xl">
 						<p>Weather</p>
 						<p class="container--font-style-bold" id="weather-description"></p>
@@ -36,19 +52,26 @@
 						<p class="container--font-style-bold" id="weather-wind"></p>
 					</div>
 				</div>
+				
 				<p class="text-center container--font-style-bold" id="weather-location"></p>
 				<div class="flex">
 					<a href="https://github.com/KUBIX90"><i class="ion-social-github container--icon-font-size container--icon-size container--icon-margin_right_xs"></i></a> <a href="https://www.linkedin.com/in/mark-kubik-79926440"><i class="ion-social-linkedin container--icon-size container--icon-font-size"></i></a>
 				</div>
 				<p class="container--author-font-style">By Mark Kubik</p>
-			</div>
-			<button id="weather-dubai">Dubai</button> <button id="weather-new-york">New York</button> <button id="weather-london">London</button>
-		</div>
-	</div><a id="image-credit" class="background-text--image-credit" href="https://unsplash.com/@aleskrivec" target="_blank">Background by Ales Krivac</a> 
+
+			
+			<button id="weather-dubai">Dubai</button>
+			<button id="weather-new-york">New York</button>
+			<button id="weather-london">London</button>
+			
+	</section>
+	
+	<a id="image-credit" class="background-text--image-credit" href="https://unsplash.com/@aleskrivec" target="_blank">Background by Ales Krivac</a> 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script> 
 	<script src="public/App.js">
 	</script>
+	
 </body>
 </html>

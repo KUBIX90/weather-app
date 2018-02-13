@@ -1,23 +1,88 @@
-button{
+/* BASE STYLES
+============================================================================= */
+
+html {height:100%;}
+
+html body {
+	background: url("images/default.jpg"); 
+    background-size:cover;
+	height:80%;
+}
+
+.flex			{display:flex;}
+.flex--center	{justify-content:center;}
+.flex--column	{flex-direction:column;}
+
+/* SECTION STYLES
+============================================================================= */
+
+
+
+/*------------- Container ----------------- */
+
+#container {
+	text-align:center;
+	background-color:rgba(255, 255, 255, .80);
+	border-radius:20px;
+	box-shadow:0px 0px 35px black;
+}
+
+.section_container--position-center{
+	margin:0 auto;
+	max-width:700px;
+}
+.section_container--position-vertical{
 	position:relative;
-	margin:.5rem .25rem;
-	width:120px;
-	border-radius:10px;
-	background-color:rgba(50,50,50, .6);
-	border:1px solid rgba(50,50,50, .6);
-	color:white;
-	font-size: .8rem;
+	top:60%;
+	transform:translateY(-50%);
 }
-button:hover{
-	background-color:rgba(76,175,80, .8);
-	transition: all ease-in-out 400ms;
+
+/*------ Temperature Information --------- */
+
+.container_temp--padding-top{
+	padding-top:2rem;
 }
-.flex{
-	display:flex;
-	justify-content:center;
+
+.container_temp-weather-icon--size{
+	height:40px;
+	width:50px;
 }
-.flex-column{
-	flex-direction:column;
+
+.container--font-style-bold{
+	font-weight:600;
+}
+
+
+
+
+
+.container--weather-icon-margin-right-m{
+	margin-right:2rem;
+}
+.container--degrees-font-size{
+	font-size:2rem;
+}
+.container_temp--padding-top{
+	padding-top:2rem;
+}
+.container--text-margin{
+	margin-right:3rem;
+}
+.container--icon-font-size {
+	font-size:2.5rem;
+}
+.container--icon-size {
+	font-size:2.5rem;
+}
+.container--icon-margin_right_xs{
+	margin-right:.25rem;
+}
+.container--author-font-style{
+	font-size:.8rem;
+	font-style:italic;
+	font-weight:600;
+	padding-bottom:1.5rem;
+	margin-bottom:.1rem;
 }
 
 
@@ -80,80 +145,36 @@ input:checked + .temp-slider:before {
   transform: translateX(30px);
 }
 
-/*---------------Container CSS-----------------*/
 
-.container--center{
-	margin:0 auto;
-	min-width:340px;
-}
-.container--position-vertical{
+
+button{
 	position:relative;
-	top:45%;
-	transform:translateY(-50%);
-	width:50%;
+	margin:.5rem .25rem;
+	width:120px;
+	border-radius:10px;
+	background-color:rgba(50,50,50, .6);
+	border:1px solid rgba(50,50,50, .6);
+	color:white;
+	font-size: .8rem;
 }
-.container--text-center{
-	text-align:center;
+
+button:hover{
+	background-color:rgba(76,175,80, .8);
+	transition: all ease-in-out 400ms;
 }
-.container--background-color {
-	background-color:rgba(255, 255, 255, .80);
-}
-.container--background-shape {
-	border-radius:20px;
-	box-shadow:0px 0px 35px black;
-}
-.container--font-style-bold{
-	font-weight:600;
-}
-.container--weather-icon-size{
-	height:40px;
-	width:50px;
-}
-.container--weather-icon-margin-right-m{
-	margin-right:2rem;
-}
-.container--degrees-font-size{
-	font-size:2rem;
-}
-.container--text-margin-top-xl{
-	padding-top:2rem;
-}
-.container--text-margin-right-xl{
-	margin-right:3rem;
-}
-.container--icon-font-size {
-	font-size:2.5rem;
-}
-.container--icon-size {
-	font-size:2.5rem;
-}
-.container--icon-margin_right_xs{
-	margin-right:.25rem;
-}
-.container--author-font-style{
-	font-size:.8rem;
-	font-style:italic;
-	font-weight:600;
-	padding-bottom:1.5rem;
-	margin-bottom:.1rem;
-}
+
+
+
+
+
 #weather-description{
 	text-transform:capitalize;
 }
 
 /*-----------------Background CSS------------------*/
 
-/*--image covers entire page--*/
-html,
-body,
-.view {
-    height:100%;
-	margin:0;
-}
-.view {
-    background: url("images/default.jpg");
-    background-size:cover;
-}
+
+
 /*--image credit--*/
 .background-text--image-credit{
 	color:white;
@@ -172,7 +193,7 @@ body,
 .background-paris{
 	background: url("images/paris.jpg");
     background-size:cover;
-	transition: all 3s ease;
+	transition: all 2s ease;
 }
 .background-tokyo{
 	background: url("images/tokyo.jpg");
