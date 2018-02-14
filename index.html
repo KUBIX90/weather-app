@@ -22,7 +22,7 @@
 						 class = "flex 
 								  flex--center 
 								  container_temp-info--padding-top">
-					<figure class = "container-weather-icon--position">
+					<figure class = "container_temp-info-weather-icon--position">
 						<img id = "weather-icon" 
 							 alt = "Weather Icon" 
 							 class = "container_temp-info-weather-icon--size"/>
@@ -32,26 +32,32 @@
 									container_temp-info--font-size"></p>
 					<section class = "flex-column temp-slider--position-left">
 						<p id = "temp-slider-text">Celsius</p>
-							<label class="switch">
-								<input type="checkbox">
-									<span class="temp-slider"></span>
+							<label class = "switch">
+								<input type = "checkbox">
+									<span class = "temp-slider"></span>
 							</label>
 					</section>
 				</article>
 				
-				<article class="flex flex--center">
-					<div class="flex--column container--text-margin-right-xl">
-						<p>Weather</p>
-						<p class="container--font-style-bold" id="weather-description"></p>
-					</div>
-					<div class="flex--column container--text-margin-right-xl">
-						<p>Humidity</p>
-						<p class="container--font-style-bold" id="weather-humidity"></p>
-					</div>
-					<div class="flex-column">
-						<p>Wind Speed</p>
-						<p class="container--font-style-bold" id="weather-wind"></p>
-					</div>
+				<article id = "weather-info" 
+						 class = "flex 
+								  flex--center
+								  container_weather-info--padding-top">
+						<div class = "container_weather-info--margin-right">
+							<p>Weather</p>
+							<p id = "weather-description"
+							   class = "container--font-style-bold"></p>
+						</div>
+						<div class="container_weather-info--margin-right">
+							<p>Humidity</p>
+							<p id = "weather-humidity" 
+							   class = "container--font-style-bold"></p>
+						</div>
+						<div class = "flex-column">
+							<p>Wind Speed</p>
+							<p id = "weather-wind"
+							   class = "container--font-style-bold"></p>
+						</div>
 				</article>
 				
 				<p class="text-center container--font-style-bold" id="weather-location"></p>
@@ -64,7 +70,6 @@
 			<button id = "weather-dubai">Dubai</button>
 			<button id = "weather-new-york">New York</button>
 			<button id = "weather-london">London</button>
-			
 	</section>
 	
 	<a id="image-credit" class="background-text--image-credit" href="https://unsplash.com/@aleskrivec" target="_blank">Background by Ales Krivac</a> 

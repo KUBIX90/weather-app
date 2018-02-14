@@ -1,9 +1,7 @@
 /* BASE STYLES
 ============================================================================= */
 
-
-
-html {height:100%;}
+html 			{height:100%;}
 
 html body {
 	background: url("images/default.jpg"); 
@@ -17,7 +15,6 @@ html body {
 
 /* SECTION STYLES
 ============================================================================= */
-
 
 
 /*------------- Container ----------------- */
@@ -39,7 +36,7 @@ html body {
 	transform:translateY(-50%);
 }
 
-.container--font-style-bold		{font-weight:600;}
+.container--font-style-bold			{font-weight:600;}
 
 
 /*------ Temperature Information --------- */
@@ -47,7 +44,7 @@ html body {
 .container_temp-info--padding-top	{padding-top:2rem;}
 .container_temp-info--font-size		{font-size:2rem;}
 
-.container-weather-icon--position {
+.container_temp-info-weather-icon--position {
 	position:relative;
 	right:3rem;
 }
@@ -57,19 +54,20 @@ html body {
 	width:50px;
 }
 
+/*------ Weather Information --------- */
+
+.container_weather-info--margin-right	{margin-right:1.5rem;}
+.container_weather-info--padding-top	{padding-top:1rem;}
 
 
 
-.container--text-margin{
-	margin-right:3rem;
-}
 .container--icon-font-size {
 	font-size:2.5rem;
 }
-.container--icon-size {
+.container-icon--size {
 	font-size:2.5rem;
 }
-.container--icon-margin_right_xs{
+.container-icon--margin_right{
 	margin-right:.25rem;
 }
 .container--author-font-style{
