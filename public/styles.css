@@ -17,7 +17,7 @@ html body {
 ============================================================================= */
 
 
-/*------------- Container ----------------- */
+/*---------------- Container -------------------- */
 
 #container {
 	text-align:center;
@@ -39,7 +39,7 @@ html body {
 .container--font-style-bold			{font-weight:600;}
 
 
-/*------ Temperature Information --------- */
+/*---------- Temperature Information ------------ */
 
 .container_temp-info--padding-top	{padding-top:2rem;}
 .container_temp-info--font-size		{font-size:2rem;}
@@ -54,34 +54,9 @@ html body {
 	width:50px;
 }
 
-/*------ Weather Information --------- */
+/*-------Temp slider -------*/
 
-.container_weather-info--margin-right	{margin-right:1.5rem;}
-.container_weather-info--padding-top	{padding-top:1rem;}
-
-
-
-.container--icon-font-size {
-	font-size:2.5rem;
-}
-.container-icon--size {
-	font-size:2.5rem;
-}
-.container-icon--margin_right{
-	margin-right:.25rem;
-}
-.container--author-font-style{
-	font-size:.8rem;
-	font-style:italic;
-	font-weight:600;
-	padding-bottom:1.5rem;
-	margin-bottom:.1rem;
-}
-
-
-/*---------------Temp slider CSS---------------*/
-
-/* Hide default HTML checkbox */
+/* Hide default checkbox */
 .switch input {
 	display:none;
 }
@@ -97,6 +72,7 @@ html body {
 	position:relative;
 	left:3.5rem;
 }
+
 /* The slider */
 .temp-slider {
 	position: absolute;
@@ -139,6 +115,40 @@ input:checked + .temp-slider:before {
 }
 
 
+/*------ Weather Information ------- */
+
+
+#weather-description					{text-transform:capitalize;}
+.container_weather-info--margin-right	{margin-right:1.5rem;}
+.container_weather-info--padding-top	{padding-top:1rem;}
+
+
+/*----------- Icon Links ----------- */
+
+i 						 {font-size:2.5rem; margin-right:.5rem;}
+
+/*----------- Author --------------- */
+
+.container_author--font {
+	font-size:.8rem;
+	font-style:italic;
+	font-weight:600;
+	padding-bottom:1.5rem;
+	margin-bottom:.1rem;
+}
+
+/*--image credit--*/
+.section-image-credit {
+	color:white;
+	text-decoration:none;
+	padding:2px 4px;
+	display:inline-block;
+	border-radius:3px;
+	position:absolute;
+	top:96%;
+	font-size:.8rem;
+}
+
 
 button{
 	position:relative;
@@ -156,29 +166,10 @@ button:hover{
 	transition: all ease-in-out 400ms;
 }
 
-
-
-
-
-#weather-description{
-	text-transform:capitalize;
-}
-
 /*-----------------Background CSS------------------*/
 
 
 
-/*--image credit--*/
-.background-text--image-credit{
-	color:white;
-	text-decoration:none;
-	padding:2px 4px;
-	display:inline-block;
-	border-radius:3px;
-	position:absolute;
-	top:96%;
-	font-size:.8rem;
-}
 .background-text--image-credit:hover{
 	color:white;
 	text-decoration:none;
