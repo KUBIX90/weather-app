@@ -1,6 +1,8 @@
 /* BASE STYLES
 ============================================================================= */
 
+
+
 html {height:100%;}
 
 html body {
@@ -27,44 +29,37 @@ html body {
 	box-shadow:0px 0px 35px black;
 }
 
-.section_container--position-center{
+.section_container--position-center {
 	margin:0 auto;
 	max-width:700px;
 }
-.section_container--position-vertical{
+.section_container--position-vertical {
 	position:relative;
 	top:60%;
 	transform:translateY(-50%);
 }
 
+.container--font-style-bold		{font-weight:600;}
+
+
 /*------ Temperature Information --------- */
 
-.container_temp--padding-top{
-	padding-top:2rem;
+.container_temp-info--padding-top	{padding-top:2rem;}
+.container_temp-info--font-size		{font-size:2rem;}
+
+.container-weather-icon--position {
+	position:relative;
+	right:3rem;
 }
 
-.container_temp-weather-icon--size{
+.container_temp-info-weather-icon--size {
 	height:40px;
 	width:50px;
 }
 
-.container--font-style-bold{
-	font-weight:600;
-}
 
 
 
-
-
-.container--weather-icon-margin-right-m{
-	margin-right:2rem;
-}
-.container--degrees-font-size{
-	font-size:2rem;
-}
-.container_temp--padding-top{
-	padding-top:2rem;
-}
 .container--text-margin{
 	margin-right:3rem;
 }
