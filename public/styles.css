@@ -28,7 +28,7 @@ html body {
 
 .section_container--position-center {
 	margin:0 auto;
-	max-width:700px;
+	max-width:625px;
 }
 .section_container--position-vertical {
 	position:relative;
@@ -37,7 +37,6 @@ html body {
 }
 
 .container--font-style-bold			{font-weight:600;}
-
 
 /*---------- Temperature Information ------------ */
 
@@ -63,10 +62,10 @@ html body {
 
 /*--switch CSS--*/
 .switch {
-	position: relative;
-	display: inline-block;
-	width: 50px;
-	height: 20px;
+	position:relative;
+	display:inline-block;
+	width:50px;
+	height:20px;
 }
 .temp-slider--position-left{
 	position:relative;
@@ -125,7 +124,7 @@ input:checked + .temp-slider:before {
 
 /*----------- Icon Links ----------- */
 
-i 						 {font-size:2.5rem; margin-right:.5rem;}
+i 	 {font-size:2.5rem; margin-right:.5rem;}
 
 /*----------- Author --------------- */
 
@@ -152,18 +151,18 @@ i 						 {font-size:2.5rem; margin-right:.5rem;}
 
 button{
 	position:relative;
-	margin:.5rem .25rem;
-	width:120px;
+	margin:.75rem .5rem;
+	width:150px;
 	border-radius:10px;
 	background-color:rgba(50,50,50, .6);
-	border:1px solid rgba(50,50,50, .6);
+	border:none;
 	color:white;
-	font-size: .8rem;
+	font-size:.8rem;
+	transition:all ease-in-out 400ms;
 }
 
 button:hover{
 	background-color:rgba(76,175,80, .8);
-	transition: all ease-in-out 400ms;
 }
 
 /*-----------------Background CSS------------------*/
