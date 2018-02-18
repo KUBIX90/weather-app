@@ -1,4 +1,46 @@
-$(document).ready(function() {
+let apiRequest = new XMLHttpRequest();
+
+function getWeather(lon, lat){
+	apiRequest.open("GET","https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lon);
+	apiRequest.onload = function(){
+		let data = JSON.parse(apiRequest.responseText);
+		
+			document.getElementById("weather-icon").setAttribute("src", data.weather[0].icon);
+			document.getElementById("weather-degrees").innerHTML = Math.round(data.main.temp) + "&deg;c";
+			document.getElementById("weather-description").innerHTML = data.weather[0].description;
+			document.getElementById("weather-humidity").innerHTML = Math.round(data.main.humidity) + "%";
+			document.getElementById("weather-wind").innerHTML = Math.round(data.wind.speed) + "mph";
+			document.getElementById("weather-location").innerHTML = data.name;
+	}
+	apiRequest.send();
+}
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+
+
+//Get Geo location//
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      //Show my local weather
+      var lon = position.coords.longitude;
+      var lat = position.coords.latitude;
+
+      getWeather(lon, lat);
+    });
+  }
+
+
+
+
+/*$(document).ready(function() {
   
   var toggleF = true;
   var weatherData;
@@ -128,3 +170,4 @@ $(document).ready(function() {
     weatherInfo(51.5, -0.11);
   });
 });
+*/
