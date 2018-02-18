@@ -134,7 +134,7 @@ i 	 {font-size:2.5rem; margin-right:.5rem;}
 	margin-bottom:.1rem;
 }
 
-.section-image-credit {
+.section-image-credit {/*sort hover effect issue */
 	color:white;
 	text-decoration:none;
 	padding:2px 4px;
@@ -144,6 +144,8 @@ i 	 {font-size:2.5rem; margin-right:.5rem;}
 	top:96%;
 	font-size:.8rem;
 }
+
+
 
 /*---------------- City Buttons ------------------ */
 
@@ -161,41 +163,4 @@ button{
 
 button:hover{
 	background-color:rgba(76,175,80, .8);
-}
-
-/*-----------------Background CSS------------------*/
-
-.background-text--image-credit:hover{
-	color:white;
-	text-decoration:none;
-}
-.background-paris{
-	background: url("images/paris.jpg");
-    background-size:cover;
-	transition: all 2s ease;
-}
-.background-tokyo{
-	background: url("images/tokyo.jpg");
-    background-size:cover;
-	transition: all 3s ease;
-}
-.background-los_angeles{
-	background: url("images/los_angeles.jpg");
-    background-size:cover;
-	transition: all 3s ease;
-}
-.background-dubai{
-	background: url("images/dubai.jpg");
-    background-size:cover;
-	transition: all 3s ease;
-}
-.background-new_york{
-	background: url("images/new_york.jpg");
-    background-size:cover;
-	transition: all 3s ease;
-}
-.background-london{
-	background: url("images/london.jpg");
-    background-size:cover;
-	transition: all 3s ease;
 }
