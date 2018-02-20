@@ -3,7 +3,6 @@
 <head>
 	<meta charset = "utf-8">
 	<meta content = "width=device-width, initial-scale=1, shrink-to-fit=no" name = "viewport">
-	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 	<link href = "public/ionicons/css/ionicons.min.css" rel = "stylesheet">
 	<link href = "public/styles.css" rel = "stylesheet" type = "text/css">
 	<title>Weather App</title>
@@ -28,15 +27,14 @@
 							 class = "container_temp-info-weather-icon--size"/>
 					</figure>
 						<p id = "weather-degrees"
-						   class = "container--font-style-bold 
-									container_temp-info--font-size"></p>
-					<section class = "flex-column temp-slider--position-left">
+						   class = "container_temp-info--font-size"></p>
+					<div class = "flex-column temp-slider--position">
 						<p id = "temp-slider-text">Celsius</p>
 							<label class = "switch">
 								<input id = "temp-slider" type = "checkbox">
 									<span class = "temp-slider"></span>
 							</label>
-					</section>
+					</div>
 				</article>
 				
 				<article id = "weather-info" 
@@ -64,13 +62,14 @@
 					   class = "container--font-style-bold">
 					</p>
 					
-				<article class = "flex 
+				<article id = "links" 
+						 class = "flex 
 								  flex--center">
 					<a href = "https://github.com/KUBIX90">
 						<i class = "ion-social-github"></i>
 					</a>
 					<a href = "https://www.linkedin.com/in/mark-kubik-79926440">
-					<i class = "ion-social-linkedin"></i>
+						<i class = "ion-social-linkedin"></i>
 					</a>
 				</article>
 				
@@ -88,8 +87,6 @@
 	   target = "_blank">Background by Ales Krivac
     </a> 
 	
-	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script> 
 	<script src = "public/App.js">
 	</script>
 	
